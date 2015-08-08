@@ -13,7 +13,7 @@
 # Body
 
 def any_lowercase1(s):
-    """Explain what is wrong, if anything, here.
+    """This works.
     """
     for c in s:
         if c.islower():
@@ -22,7 +22,8 @@ def any_lowercase1(s):
             return False
 
 def any_lowercase2(s):
-    """Explain what is wrong, if anything, here.
+    """This checks for a constant character 'c'. Doesn't process
+    the user input at all.
     """
     for c in s:
         if 'c'.islower():
@@ -31,14 +32,14 @@ def any_lowercase2(s):
             return 'False'
 
 def any_lowercase3(s):
-    """Explain what is wrong, if anything, here.
+    """This works.
     """
     for c in s:
         flag = c.islower()
     return flag
 
 def any_lowercase4(s):
-    """Explain what is wrong, if anything, here.
+    """This works.
     """
     flag = False
     for c in s:
@@ -46,7 +47,7 @@ def any_lowercase4(s):
     return flag
 
 def any_lowercase5(s):
-    """Explain what is wrong, if anything, here.
+    """This actually checks if a character is not in lowercase.
     """
     for c in s:
         if not c.islower():
@@ -60,7 +61,8 @@ def main():
     # call that function with a string for which the function returns
     # incorrectly.
     # ex.: any_lowercase_("thisstringmessesupthefunction")
-    print("Hello World!")
+    print any_lowercase2('THISDOESNTWORK')
+    print any_lowercase5('BoOHOO')
     
 
 if __name__ == '__main__':
